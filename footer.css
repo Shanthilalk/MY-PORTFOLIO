@@ -1,0 +1,40 @@
+/*Footer Section*/
+
+.nothing {
+    height: 80px;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons i {
+    color: black;
+    margin-right: 10px;
+}
+
+#ftr-icon-1:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ftr-icon-2:hover {
+    color: #3781C2;
+}
+
+#ftr-icon-3:hover {
+    background: linear-gradient(120deg,
+        #4285F4 0%,
+        #EA4335 35%,
+        #FBBC05 70%,
+        #34A853 100%);
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    font-size: 2rem;
+}

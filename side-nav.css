@@ -1,0 +1,134 @@
+/*Stylings for Side navbar + Nav overlay*/
+
+.links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100dvh;
+    width: 250px;
+    background-color: #b2c6dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-close-btn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    position: relative;
+    top: 15px;
+    right: 80px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.link {
+    padding: 12px 15px;
+    align-items: center;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.link .side-nav-trav-btn {
+    width: 5px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid #2b7fff;
+    background-color: #2b7fff;
+    position: relative;
+    right: 16px;
+    top: 3px;
+    opacity: 0;
+}
+
+.link:hover .side-nav-trav-btn,
+.link.active .side-nav-trav-btn {
+    opacity: 1;
+}
+
+.link.active,
+.link:hover {
+    color: #4274d9;
+    background-color: white;
+    transition-duration: 800ms;
+}
+
+.icons {
+    position: absolute;
+    bottom: 20px;
+}
+
+.icons a {
+    color: black;
+}
+
+.icons i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#icon-1 {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+#icon-1:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#icon-2:hover {
+    color: #073aa1;
+}
+
+#icon-3:hover {
+    background: linear-gradient(120deg,
+        #4285F4 0%,
+        #EA4335 35%,
+        #FBBC05 70%,
+        #34A853 100%);
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    font-size: 2rem;
+}
+
+.links {
+    transform: translateX(-250px);
+    transition: 0.5s;
+    z-index: 12;
+}
+
+.open .links {
+    transform: translateX(0px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+.open .nav-overlay {
+    visibility: visible;
+    opacity: 1;
+}
