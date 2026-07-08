@@ -146,15 +146,15 @@
 
 @media (max-width: 480px) {
     #resume-container {
-        height: 1650px;
+        height: 1700px;
     }
 
     .info {
-        height: 600px;
+        height: 610px;
     }
 
     .dwnld-resume {
         position: relative;
-        top: 15px;
+        top: 20px;
     }
 }
