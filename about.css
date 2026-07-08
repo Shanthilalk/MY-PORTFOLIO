@@ -32,13 +32,14 @@
 
 .about-section span {
     width: 900px;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .about-me {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    font-size: 20px;
 }
 
 .about-section img {
@@ -59,7 +60,7 @@
 
 @media (max-width: 480px) {
     #about-container {
-        height: 900px;
+        height: 800px;
     }
     #about-container h1 {
         position: relative;

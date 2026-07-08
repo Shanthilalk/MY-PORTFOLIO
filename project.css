@@ -85,6 +85,8 @@
 
     #project-container h3 {
         width: 400px;
+        position: relative;
+        left: 10px;
     }
 
     #project-container h1,

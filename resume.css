@@ -137,14 +137,24 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .dwnld-resume {
+        position: relative;
+        top: 15px;
+    }
 }
 
 @media (max-width: 480px) {
     #resume-container {
-        height: 1800px;
+        height: 1650px;
     }
 
     .info {
-        height: 650px;
+        height: 600px;
+    }
+
+    .dwnld-resume {
+        position: relative;
+        top: 15px;
     }
 }
