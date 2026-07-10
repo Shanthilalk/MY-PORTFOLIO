@@ -133,6 +133,11 @@ textarea:-webkit-autofill:focus {
         position: relative;
         right: 15px;
     }
+
+    .direct-email {
+        position: relative;
+        left: -60px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -151,7 +156,7 @@ textarea:-webkit-autofill:focus {
 
     .direct-email {
         position: relative;
-        left: 8px;
+        left: -10px;
         display: flex;
         flex-direction: column;
     }

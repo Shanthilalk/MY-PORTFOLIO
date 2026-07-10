@@ -60,7 +60,7 @@
 
 @media (max-width: 480px) {
     #about-container {
-        height: 800px;
+        height: 900px;
     }
     #about-container h1 {
         position: relative;
